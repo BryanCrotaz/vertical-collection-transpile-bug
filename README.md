@@ -1,57 +1,184 @@
 # test-transpile
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Demo repo to show transpile bug in @html-next/vertical-collection with Ember 4
 
-## Prerequisites
+```
+ember new test-transpile --yarn
+installing app
+Ember CLI v4.7.0
 
-You will need the following things properly installed on your computer.
+✨  Creating a new Ember app in /Users/bryan/Projects/test-transpile:
+  create .editorconfig
+  create .ember-cli
+  create .eslintignore
+  create .eslintrc.js
+  create .github/workflows/ci.yml
+  create .prettierignore
+  create .prettierrc.js
+  create .template-lintrc.js
+  create .watchmanconfig
+  create README.md
+  create app/app.js
+  create app/components/.gitkeep
+  create app/controllers/.gitkeep
+  create app/helpers/.gitkeep
+  create app/index.html
+  create app/models/.gitkeep
+  create app/router.js
+  create app/routes/.gitkeep
+  create app/styles/app.css
+  create app/templates/application.hbs
+  create config/ember-cli-update.json
+  create config/environment.js
+  create config/optional-features.json
+  create config/targets.js
+  create ember-cli-build.js
+  create .gitignore
+  create package.json
+  create public/robots.txt
+  create testem.js
+  create tests/helpers/index.js
+  create tests/index.html
+  create tests/integration/.gitkeep
+  create tests/test-helper.js
+  create tests/unit/.gitkeep
+  create vendor/.gitkeep
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+🚧  Installing packages... This might take a couple of minutes.
+yarn: Installed dependencies
 
-## Installation
+🎥  Initializing git repository.
+Git: successfully initialized.
 
-* `git clone <repository-url>` this repository
-* `cd test-transpile`
-* `yarn install`
+🎉  Successfully created project test-transpile.
+👉   Get started by typing:
 
-## Running / Development
+  $ cd test-transpile
+  $ yarn start
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+Happy coding!
+Bryans-MacBook-Pro:Projects bryan$ cd test-transpile
+Bryans-MacBook-Pro:test-transpile bryan$ ember install @html-next/vertical-collection
 
-### Code Generators
+🚧  Installing packages... This might take a couple of minutes.
+yarn: Installed @html-next/vertical-collection
+Install failed. Could not find addon with name: @html-next/vertical-collection
 
-Make use of the many generators for code, try `ember help generate` for more details
+Bryans-MacBook-Pro:test-transpile bryan$ ember install @html-next/vertical-collection
 
-### Running Tests
+🚧  Installing packages... This might take a couple of minutes.
+yarn: Installed @html-next/vertical-collection
+Installed addon package.
+Bryans-MacBook-Pro:test-transpile bryan$ ember g controller application
+installing controller
+  create app/controllers/application.js
+installing controller-test
+  create tests/unit/controllers/application-test.js
+Bryans-MacBook-Pro:test-transpile bryan$ ember --version
+ember-cli: 4.7.0
+node: 14.20.0
+os: darwin x64
+Bryans-MacBook-Pro:test-transpile bryan$ ember-cli-update
+? Blueprint updates have been found. Which one would you like to update? app, cu
+rrent: 4.7.0, latest: 4.8.0
+? Do you want the latest version? 4.8.0 (latest)
+installing app
+Ember CLI v4.7.0
 
-* `ember test`
-* `ember test --server`
+Creating a new Ember app in /private/var/folders/24/9c9x7j316gbd3z5wg84fghqc0000gn/T/tmp-27102-IPZF3K7NnsDc/test-transpile:
+  create .editorconfig
+  create .ember-cli
+  create .eslintignore
+  create .eslintrc.js
+  create .github/workflows/ci.yml
+  create .prettierignore
+  create .prettierrc.js
+  create .template-lintrc.js
+  create .watchmanconfig
+  create README.md
+  create app/app.js
+  create app/components/.gitkeep
+  create app/controllers/.gitkeep
+  create app/helpers/.gitkeep
+  create app/index.html
+  create app/models/.gitkeep
+  create app/router.js
+  create app/routes/.gitkeep
+  create app/styles/app.css
+  create app/templates/application.hbs
+  create config/ember-cli-update.json
+  create config/environment.js
+  create config/optional-features.json
+  create config/targets.js
+  create ember-cli-build.js
+  create .gitignore
+  create package.json
+  create public/robots.txt
+  create testem.js
+  create tests/helpers/index.js
+  create tests/index.html
+  create tests/integration/.gitkeep
+  create tests/test-helper.js
+  create tests/unit/.gitkeep
+  create vendor/.gitkeep
 
-### Linting
+Successfully created project test-transpile.
+Get started by typing:
 
-* `yarn lint`
-* `yarn lint:fix`
+  $ cd test-transpile
+  $ yarn start
 
-### Building
+Happy coding!
+installing app
+Ember CLI v4.8.0
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+Creating a new Ember app in /private/var/folders/24/9c9x7j316gbd3z5wg84fghqc0000gn/T/tmp-27102-1dpaAmgm6H7v/test-transpile:
+  create .editorconfig
+  create .ember-cli
+  create .eslintignore
+  create .eslintrc.js
+  create .github/workflows/ci.yml
+  create .prettierignore
+  create .prettierrc.js
+  create .template-lintrc.js
+  create .watchmanconfig
+  create README.md
+  create app/app.js
+  create app/components/.gitkeep
+  create app/controllers/.gitkeep
+  create app/helpers/.gitkeep
+  create app/index.html
+  create app/models/.gitkeep
+  create app/router.js
+  create app/routes/.gitkeep
+  create app/styles/app.css
+  create app/templates/application.hbs
+  create config/ember-cli-update.json
+  create config/environment.js
+  create config/optional-features.json
+  create config/targets.js
+  create ember-cli-build.js
+  create .gitignore
+  create package.json
+  create public/robots.txt
+  create testem.js
+  create tests/helpers/index.js
+  create tests/index.html
+  create tests/integration/.gitkeep
+  create tests/test-helper.js
+  create tests/unit/.gitkeep
+  create vendor/.gitkeep
 
-### Deploying
+Successfully created project test-transpile.
+Get started by typing:
 
-Specify what it takes to deploy your app.
+  $ cd test-transpile
+  $ yarn start
 
-## Further Reading / Useful Links
+Happy coding!
+Bryans-MacBook-Pro:test-transpile bryan$ ember --version
+ember-cli: 4.8.0
+node: 14.20.0
+os: darwin x64
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+```
