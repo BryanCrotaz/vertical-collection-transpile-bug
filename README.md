@@ -2,6 +2,18 @@
 
 Demo repo to show transpile bug in @html-next/vertical-collection with Ember 4
 
+Console error in Chrome:
+```
+Uncaught ReferenceError: Ember is not defined
+    at DynamicRadar._updateConstants (-private.js:774:1)
+    at DynamicRadar._updateConstants (-private.js:1424:1)
+    at DynamicRadar.start (-private.js:625:1)
+    at component.js:333:1
+    at Array.execJob (index.js:27:1)
+    at Scheduler.flush (index.js:74:1)
+    at index.js:63:1
+```
+
 ```
 ember new test-transpile --yarn
 installing app
